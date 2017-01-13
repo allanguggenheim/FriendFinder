@@ -1,3 +1,4 @@
+
 var nameComplete = false;
 var photoComplete = false;
 
