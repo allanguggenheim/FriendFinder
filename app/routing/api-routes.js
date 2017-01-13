@@ -1,11 +1,12 @@
 var mysql = require("mysql");
 
+
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "us-cdbr-iron-east-04.cleardb.net",
   port: 3306,
-  user: "root",
-  password: "pasword",
-  database: "FriendFinder"
+  user: "b1b6e7dd086b93",
+  password: "cae3fe4f",
+  database: "heroku_b0cbb0c89762d88"
 });
 
 module.exports = function(app){
