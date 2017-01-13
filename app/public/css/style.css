@@ -1,0 +1,42 @@
+.jumbotron {
+  color: grey;
+  margin-top: 100px;
+}
+
+#survey-btn{
+  color: black;
+  margin-top: 100px;
+  border: 1px solid black;
+}
+
+#submit-button {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+}
+
+#match-image {
+    height: 120px;
+}
+
+#instructions {
+  margin-left: 100px;
+  line-height: 100px;
+}
+
+p a {
+  color: black;
+}
+
+p a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#survey-hr {
+  color: black;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}

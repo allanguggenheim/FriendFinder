@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity=""   crossorigin="anonymous"></script>
+    <script   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"   integrity=""   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/script.js"></script>
+    <meta charset="utf-8">
+    <title>FriendFinder</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron" id="surveytron">
+        <h1 class="text-center">Survey</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <form>
+            <div id="name-group" class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" id="name" placeholder="John Smith">
+              <span id="name-span" aria-hidden="true"></span>
+            </div>
+            <div id="photo-group"class="form-group">
+              <label>Photo</label>
+              <input type="text" class="form-control" id="photo" placeholder="www.example.com/photo">
+              <span id="photo-span" aria-hidden="true"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr id="survery-hr">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading" id="panel-top">How much do you agree with the following statement on a scale of 1 to 5:</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label>I beleive in Climate Change.</label>
+                    <select class="form-control" id="question1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I drink tea in the morning.</label>
+                    <select class="form-control" id="question2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I prefer iphones.</label>
+                    <select class="form-control" id="question3">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I like cats.</label>
+                    <select class="form-control" id="question4">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I want lots of chidren.</label>
+                    <select class="form-control" id="question5">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>A perfect date would be diseyland.</label>
+                    <select class="form-control" id="question6">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I perfer reading to movies.</label>
+                    <select class="form-control" id="question7">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I like to travel.</label>
+                    <select class="form-control" id="question8">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I am closer to friends than family.</label>
+                    <select class="form-control" id="question9">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>I prefer walks at the beach over night outs.</label>
+                    <select class="form-control" id="question10">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <button class="btn" id="submit-button" type="submit" disabled="true">Submit</button>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h1 class="modal-title text-center">This person is perfect to be your friend!</h1>
+            </div>
+            <div class="modal-body">
+              <h1 id="match-name" class="text-center"></h1>
+              <img src="" alt="" id="match-image" class="img-responsive">
+              <h4 id="message" class="text-center"></h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
