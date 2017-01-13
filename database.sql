@@ -4,9 +4,9 @@ USE heroku_b0cbb0c89762d88;
 
 CREATE TABLE `heroku_b0cbb0c89762d88`.`friends` (
     item_id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(9990) NULL,
-    profilePic VARCHAR(9999) NULL,
-    scores VARCHAR(9999) NOT NULL,
+    name VARCHAR(999) NULL,
+    profilePic VARCHAR(999) NULL,
+    scores VARCHAR(999) NOT NULL,
     PRIMARY KEY (item_id)
 );
 
