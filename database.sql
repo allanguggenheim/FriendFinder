@@ -2,11 +2,13 @@ CREATE DATABASE heroku_b0cbb0c89762d88;
 
 USE heroku_b0cbb0c89762d88;
 
+DROP TABLE `heroku_b0cbb0c89762d88`.`friends`;
+
 CREATE TABLE `heroku_b0cbb0c89762d88`.`friends` (
     item_id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(99) NULL,
     profilePic VARCHAR(99) NULL,
-    scores VARCHAR(99) NOT NULL,
+    scores VARCHAR(99) NULL,
     PRIMARY KEY (item_id)
 );
 
