@@ -66,7 +66,7 @@ $(document).ready(function(){
       question9: parseInt($('#question9').val().replace(/[^0-9 | ^.]/g, '')),
       question10: parseInt($('#question10').val().replace(/[^0-9 | ^.]/g, ''))
     }
-    $.post('http://localhost:3000/api/friends', newFriend).then(function(response){
+    $.post('https://friendfinder1.herokuapp.com/api/friends', newFriend).then(function(response){
 
       $('#match-image').attr('src', response.photo);
       $('#match-name').text(response.name);
